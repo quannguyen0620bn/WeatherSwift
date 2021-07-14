@@ -11,8 +11,8 @@ struct saveJSON:Codable{
     let main:main
     let weather:[weather]
     let name:String
-    
-}
+//    let list:[list]
+
 struct coord:Codable{
     let lon:Float
     let lat:Float
@@ -27,3 +27,10 @@ struct main:Codable{
 struct weather:Codable{
     let id:Int
 }
+
+struct list:Codable {
+    let dt:Int
+}
+
+}
+

@@ -10,7 +10,10 @@ struct WeatherData{
     let temp:Float
     var id:Int
     let name:String
-    
+    let feelLike:Float
+    let humid:Float
+    let temp_min:Float
+    let temp_max:Float
     
     var conditionID:String{
         switch id {
