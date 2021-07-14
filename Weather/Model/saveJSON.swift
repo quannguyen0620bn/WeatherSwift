@@ -7,30 +7,51 @@
 
 import Foundation
 struct saveJSON:Codable{
-    let coord:coord
-    let main:main
-    let weather:[weather]
+    let city:city
+    let list:[list]
+    
+    
+    struct list:Codable{
+        let main:main
+        let weather:[weather]
+        let dt_txt:String
+        let dt:Double
+        
+    }
+    struct main:Codable {
+        var temp:Float
+        let feels_like:Float
+        let temp_min:Float
+        let temp_max:Float
+        let humidity:Float
+    }
+    struct weather:Codable{
+        let id:Int
+    }
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    struct city:Codable{
     let name:String
-//    let list:[list]
-
-struct coord:Codable{
-    let lon:Float
-    let lat:Float
-}
-struct main:Codable{
-    let temp:Float
-    let feels_like:Float
-    let humidity:Float
-    let temp_min:Float
-    let temp_max:Float
-}
-struct weather:Codable{
-    let id:Int
-}
-
-struct list:Codable {
-    let dt:Int
-}
+    let coord:coord
+    }
+    struct coord:Codable{
+        let lat:Float
+        let lon:Float
+    }
+    
+    
 
 }
-
