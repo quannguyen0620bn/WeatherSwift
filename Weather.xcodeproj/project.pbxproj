@@ -16,6 +16,7 @@
 		1430F46D269D93C000E899B8 /* WeatherManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1430F46C269D93C000E899B8 /* WeatherManager.swift */; };
 		1430F470269DA0FD00E899B8 /* saveJSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1430F46F269DA0FD00E899B8 /* saveJSON.swift */; };
 		1430F472269DA60800E899B8 /* WeatherData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1430F471269DA60800E899B8 /* WeatherData.swift */; };
+		14AEF836269FDE8100AC6574 /* AirPollutionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14AEF835269FDE8100AC6574 /* AirPollutionViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +31,7 @@
 		1430F46C269D93C000E899B8 /* WeatherManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherManager.swift; sourceTree = "<group>"; };
 		1430F46F269DA0FD00E899B8 /* saveJSON.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = saveJSON.swift; sourceTree = "<group>"; };
 		1430F471269DA60800E899B8 /* WeatherData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherData.swift; sourceTree = "<group>"; };
+		14AEF835269FDE8100AC6574 /* AirPollutionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AirPollutionViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -96,6 +98,7 @@
 			isa = PBXGroup;
 			children = (
 				1430F459269D3F0600E899B8 /* MainViewController.swift */,
+				14AEF835269FDE8100AC6574 /* AirPollutionViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -171,6 +174,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				1430F45A269D3F0600E899B8 /* MainViewController.swift in Sources */,
+				14AEF836269FDE8100AC6574 /* AirPollutionViewController.swift in Sources */,
 				1430F456269D3F0600E899B8 /* AppDelegate.swift in Sources */,
 				1430F470269DA0FD00E899B8 /* saveJSON.swift in Sources */,
 				1430F46D269D93C000E899B8 /* WeatherManager.swift in Sources */,
@@ -325,6 +329,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = S589QZ9AM2;
 				INFOPLIST_FILE = Weather/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -344,6 +349,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = S589QZ9AM2;
 				INFOPLIST_FILE = Weather/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
