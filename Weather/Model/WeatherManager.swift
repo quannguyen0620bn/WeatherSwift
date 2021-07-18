@@ -22,7 +22,6 @@ struct WeatherManager{
     func getLocationURL(_ lat:Float,_ lon :Float){
         let urlAir = "https://api.openweathermap.org/data/2.5/air_pollution?&appid=9c3401d3b3a3044be3e658c575adc8f3"
         let urlAirLoc = "\(urlAir)&lat=\(lat)&lon=\(lon)"
-        print(urlAirLoc)
         getDataAir(urlAirLoc)
     }
    
@@ -58,43 +57,15 @@ struct WeatherManager{
     }
     }
     
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
     var delegate : WeatherDelegate?
     let urlWeather = "https://api.openweathermap.org/data/2.5/forecast?appid=9c3401d3b3a3044be3e658c575adc8f3&units=metric&lang=vi"
     func getURLCity(_ city:String){
         let urltemp = "\(urlWeather)&q=\(city)"
         getDataMain(urltemp)
     }
-    
     func getURLCity(_ lat:Double,_ lon:Double){
         let urltemp = "\(urlWeather)&lat=\(lat)&lon=\(lon)"
+        print(urltemp)
         getDataMain(urltemp)
     }
     
@@ -171,10 +142,6 @@ struct WeatherManager{
             
             let weather = WeatherData(name: name, lat: lat, lon: lon, clouds: clouds, visibility: visibility,description:description , windSpeed:windSpeed , sunset: TimeSunset, sunrise: TimeSunrise, list: listArray)
                 return weather
-            
-            
-            
-           
             
         }
         catch{

@@ -161,9 +161,7 @@ class MainViewController: UIViewController, UITextFieldDelegate,WeatherDelegate{
     
     
     @IBAction func searchPressed(_ sender: UIButton) {
-        
         textField.endEditing(true)
-        
         
     }
     
